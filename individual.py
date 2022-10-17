@@ -18,5 +18,5 @@ def fun1(type):
  
 
 if __name__ == '__main__':
-    print(fun1(list)('1 2 3 4 5'))
-    print(fun1(tuple)('1 2 3 4 5'))
+    print(fun1(list)('1 2 3 4 5 6 7 8 9 10'))
+    print(fun1(tuple)('1 2 3 4 5 6 7 8 9 10'))
