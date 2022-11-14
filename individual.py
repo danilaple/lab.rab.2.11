@@ -9,13 +9,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
- def fun1(type):
-     def fun2(spisok):
-         if type == list:
-             return list(map(int, spisok.split()))
-         return tuple(map(int, spisok.split()))
-     return fun2 
+if __name__ == '__main__':
+    def fun1(type):
+        def fun2(spisok):
+            if type == list:
+                return list(map(int, spisok.split()))
+            return tuple(map(int, spisok.split()))
+        return fun2 
 
- if __name__ == '__main__':
-     print(fun1(list)('1 2 3 4 5 6 7 8 9 10'))
-     print(fun1(tuple)('1 2 3 4 5 6 7 8 9 10'))
+    print(fun1(list)('1 2 3 4 5 6 7 8 9 10'))
+    print(fun1(tuple)('1 2 3 4 5 6 7 8 9 10'))
